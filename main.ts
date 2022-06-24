@@ -1,4 +1,7 @@
-let TrackBit_state_value: number = 0
+//% color=#00B1ED  icon="\uf005" block="PlanetX_Base" blockId="PlanetX_Base"
+namespace Trackbit {
+
+    let TrackBit_state_value: number = 0
 
     export enum TrackbitStateType {
         //% block="◌ ◌ ◌ ◌"
@@ -149,3 +152,4 @@ let TrackBit_state_value: number = 0
         TrackBit_state_value = pins.i2cReadNumber(0x1a, NumberFormat.UInt8LE, false)
         basic.pause(5);
     }
+}
